@@ -4,27 +4,28 @@
     <meta charset="utf-8">
     <title>Temperature Converter</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
     <script src="script.js"></script>
   </head>
   <body>
     <div class="container">
       <div id="header">
         <h1>Temperature Converter</h1>
+        <h2>by Jefferson Adams</h2>
       </div>
-      <div id="tempTypeBox">
+      <div id="tempBox">
+        <p>I want to convert </p>
+        <input type="number" name="" value="" id="input" placeholder="(degrees you're converting)" autofocus>
         <select id="tempTypeInput" name="">
           <option value="Fahrenheit">Fahrenheit</option>
           <option value="Celcius">Celcius</option>
         </select>
       </div>
-      <div id="inputBox">
-        <input type="text" name="" value="" id="input">
-      </div>
       <div id="outputBox">
         <p id="output"></p>
       </div>
-      <div id="convertButton">
-        <button type="button" name="button" onclick="convertTemp()">CONVERT TEMPERATURE!</button>
+      <div id="convertButtonBox">
+        <button type="button" name="button" onclick="convertTemp()" id="convertButton">CONVERT!</button>
       </div>
 
     </div>
